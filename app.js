@@ -1,11 +1,10 @@
 const path = require('path')
 const express = require('express');
-const handlebars = require('handlebars');
-const { dirname } = require('node:path');
+const hbs = require('hbs');
 const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'handlebars');
+app.set('view engine', 'hbs');
 app.use(express.static('Publicoboot'));
 app.get('/', (req, res) => {
     res.render('index');
