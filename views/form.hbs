@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olá {{ name}}</title>
+    <title>Novo</title>
     <link rel="stylesheet" href="css/bootstrap.css"/>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="jumbotron">
-                    <h1 class="display-4">Bom dia {{ name}}!</h1>
-                    <p class="lead">este é um site simples para estudo e teste!</p>
-                    <hr class="my-4">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Saiba mais</a>
+                <h2>Adicionar novo usuário</h2>
+                <form action="/post" method="post">
+                <div class="col">
+                    <input type="text" name="textname" class="form-control">
+                </div>
+                <div class="col">
+                    <button type="submit" class="bnt bnt-sucess">enviar</button>
                 </div>
             </div>
+            </form>
         </div>
-    </div>
-    <script src="js/bootstrap.js"></script>
+     </div>
+    </div> 
 </body>
 </html>
